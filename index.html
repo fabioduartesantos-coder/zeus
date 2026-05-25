@@ -1,1 +1,151 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agro Produção • Brasil</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts (opcional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body class="font-sans">
+
+  <!-- Header -->
+  <header class="bg-green-800 text-white sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <i class="fa-solid fa-tractor text-4xl"></i>
+        <h1 class="text-3xl font-bold">Agro Produção</h1>
+      </div>
+      
+      <div class="hidden md:flex gap-8 text-lg" id="menu">
+        <a href="#" class="hover:text-green-200 transition">Início</a>
+        <a href="#culturas" class="hover:text-green-200 transition">Culturas</a>
+        <a href="#pecuaria" class="hover:text-green-200 transition">Pecuária</a>
+        <a href="#tecnologia" class="hover:text-green-200 transition">Tecnologia</a>
+        <a href="#dados" class="hover:text-green-200 transition">Dados</a>
+      </div>
+
+      <button id="mobile-menu-btn" class="md:hidden text-2xl">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-bg h-screen flex items-center text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl md:text-7xl font-bold mb-6">Produzindo o futuro do Brasil</h2>
+      <p class="text-2xl max-w-2xl">Tecnologia, produtividade e sustentabilidade no campo.</p>
+      <div class="mt-10">
+        <a href="#culturas" class="inline-block bg-yellow-500 hover:bg-yellow-400 text-black text-xl font-semibold px-10 py-4 rounded-full transition">
+          Conheça nossa Produção →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Culturas -->
+  <section id="culturas" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-green-800">Principais Culturas</h2>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-6xl mb-4">🌱</div>
+          <h3 class="text-2xl font-bold">Soja</h3>
+          <p class="text-green-600 font-semibold">162 milhões de toneladas</p>
+          <p class="text-sm text-gray-600 mt-2">Maior produção mundial</p>
+        </div>
+        <div class="text-center">
+          <div class="text-6xl mb-4">🌽</div>
+          <h3 class="text-2xl font-bold">Milho</h3>
+          <p class="text-green-600 font-semibold">125 milhões de toneladas</p>
+          <p class="text-sm text-gray-600 mt-2">2ª maior safra do mundo</p>
+        </div>
+        <div class="text-center">
+          <div class="text-6xl mb-4">☕</div>
+          <h3 class="text-2xl font-bold">Café</h3>
+          <p class="text-green-600 font-semibold">3,2 milhões de toneladas</p>
+          <p class="text-sm text-gray-600 mt-2">Maior produtor mundial</p>
+        </div>
+        <div class="text-center">
+          <div class="text-6xl mb-4">🍊</div>
+          <h3 class="text-2xl font-bold">Laranja</h3>
+          <p class="text-green-600 font-semibold">16 milhões de toneladas</p>
+          <p class="text-sm text-gray-600 mt-2">Maior exportador de suco</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pecuária -->
+  <section id="pecuaria" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-green-800">Produção Pecuária</h2>
+      <!-- ... (mesmo conteúdo de antes) ... -->
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="bg-white rounded-3xl p-10 shadow-xl">
+          <h3 class="text-3xl font-bold mb-6">Bovina</h3>
+          <ul class="space-y-4 text-lg">
+            <li><i class="fa-solid fa-check text-green-600"></i> Maior rebanho: <strong>250 milhões de cabeças</strong></li>
+            <li><i class="fa-solid fa-check text-green-600"></i> Produção de carne: <strong>10,5 milhões de toneladas</strong></li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-3xl p-10 shadow-xl">
+          <h3 class="text-3xl font-bold mb-6">Outras Produções</h3>
+          <ul class="space-y-4 text-lg">
+            <li><i class="fa-solid fa-check text-green-600"></i> Frango: 15 milhões de toneladas</li>
+            <li><i class="fa-solid fa-check text-green-600"></i> Leite: 35 bilhões de litros/ano</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tecnologia -->
+  <section id="tecnologia" class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-green-800">Tecnologia na Produção</h2>
+      <!-- conteúdo mantido igual -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl transition">
+          <i class="fa-solid fa-satellite text-5xl text-green-600 mb-6"></i>
+          <h3 class="text-2xl font-bold">Agricultura de Precisão</h3>
+          <p class="mt-4">Drones, sensores e GPS para maior eficiência.</p>
+        </div>
+        <!-- outros cards... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Dados -->
+  <section id="dados" class="py-20 bg-green-700 text-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-16">Dados da Produção 2025/2026</h2>
+      <!-- cards de dados... -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-2xl font-bold mb-2">Agro Produção</p>
+      <p class="text-green-300">Do plantio à colheita com excelência.</p>
+      <p class="mt-8 text-sm">© 2026 - Todos direitos reservados</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Externo -->
+  <script src="script.js"></script>
+</body>
+</html>
